@@ -1,0 +1,60 @@
+  
+<!--- under body refresh ANIMATED by basecmd -->
+  
+  <style>
+  /* Apply styles to the loading bar container */
+  .loading-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust the height as needed */
+
+
+  /* Apply styles to the loading bar */
+  .loading-bar {
+    width: 0%;
+    height: 100%;
+    background-color: yellow; /* Adjust the color as needed */
+    transition: width 0s ease-out; /* Adjust the transition duration as needed */
+  }
+
+  /* Apply styles to simulate connection */
+  .connecting {
+    animation: pulse 2.5s infinite;
+  }
+
+  /* Define the pulse animation */
+  @keyframes pulse {
+    0% {
+      opacity: 2.3;
+    }
+    50% {
+      opacity: 2;
+    }
+    100% {
+      opacity: 2.3;
+    }
+  }
+</style>
+
+<script>
+  // Simulate progress of loading bar
+  setTimeout(function() {
+    var loadingBar = document.querySelector(&#39;.loading-bar&#39;);
+    loadingBar.style.width = &#39;100%&#39;;
+    setTimeout(function() {
+      var loadingBarContainer = document.querySelector(&#39;.loading-bar-container&#39;);
+      loadingBarContainer.style.display = &#39;none&#39;;
+    }, 500);
+  }, 2000); // Adjust the delay and animation timing as needed
+</script>
+<div style='margin-bottom: 2px; background-color: solid;'>
+<div class='loading-bar-container'>
+  <div class='loading-bar connecting'/>
+</div>
+
+  </div>
+  
+    <!--- under body refresh ANIMATED tools by basecmd -->
+  
