@@ -1,6 +1,6 @@
   
 <!--- under body refresh ANIMATED by basecmd -->
-  
+ 
   <style>
   /* Apply styles to the loading bar container */
   .loading-bar-container {
@@ -9,14 +9,14 @@
     left: 0;
     width: 200%;
     height: 100px; /* Adjust the height as needed */
-
-
+ 
+    
 
   /* Apply styles to the loading bar */
   .loading-bar {
     width: 0%;
-    height: 100%;
-    background-color: yellow; /* Adjust the color as needed */
+    height: 1000%;
+    background-color: lime; /* Adjust the color as needed */
     transition: width 0s ease-out; /* Adjust the transition duration as needed */
   }
 
@@ -50,7 +50,7 @@
     }, 500);
   }, 2000); // Adjust the delay and animation timing as needed
 </script>
-<div style='margin-bottom: 2px; background-color: solid;'>
+<div style='margin-bottom: 2px; background-color: silver;'>
 <div class='loading-bar-container'>
   <div class='loading-bar connecting'/>
 </div>
@@ -58,4 +58,3 @@
   </div>
   
     <!--- under body refresh ANIMATED tools by basecmd -->
-  
